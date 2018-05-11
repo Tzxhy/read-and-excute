@@ -7,8 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "cli"
+    "cli",
+    "read",
+    "excute",
+    "command line"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tzxhy/read-and-excute"
+  },
   "author": "tzxhy111",
   "license": "MIT"
 }
