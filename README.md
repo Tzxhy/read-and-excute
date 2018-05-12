@@ -22,7 +22,7 @@ var customArgs = new Args({
     realFunction: [], // commands对应的执行函数
     globalConfig: {}, // 全局配置
 });
-其中，commands、options、readFunction中的顺序一一对应。
+其中，commands、options、realFunction中的顺序一一对应。
 globalConfig = {
     replaceCommandWhenAdd: false, // 默认为false, 表示不覆盖已有command配置。若使用默认设置，当对已有command配置进行addCommand时会报错
 }
