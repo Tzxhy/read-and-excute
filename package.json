@@ -1,6 +1,6 @@
 {
   "name": "read-and-excute",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a tool can read command line args and excute",
   "main": "index.js",
   "scripts": {

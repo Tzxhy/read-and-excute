@@ -13,18 +13,18 @@ var Args = require('read-and-excute');
 ## 配置
 ```javascript
 var customArgs = new Args({
-    binName: '',
-    version: '',
-    commands: [], // 字符串数组
-    commandsAndOptionsTips: '',
-    descriptions: [], // 字符串数组
-    options: [[]], // 字符串数组的数组
-    realFunction: [], // commands对应的执行函数
-    globalConfig: {}, // 全局配置
+    binName: '', // 可选，默认为'userBin'
+    version: '', // 可选，默认为'1.0.0'
+    commands: [], // 字符串数组，可选。可通过addCommand添加。
+    commandsAndOptionsTips: '', // 可选，用于描述指令和选项
+    descriptions: [], // 字符串数组，可选，用于描述指令的作用。可通过addCommand添加。
+    options: [[]], // 字符串数组的数组，可选。可通过addOptions添加选项。
+    realFunction: [], // commands对应的执行函数，可选。可通过addCommand添加。
+    globalConfig: {}, // 全局配置，可选。
 });
 其中，commands、options、realFunction中的顺序一一对应。
 globalConfig = {
-    replaceCommandWhenAdd: false, // 默认为false, 表示不覆盖已有command配置。若使用默认设置，当对已有command配置进行addCommand时会报错
+    replaceCommandWhenAdd: false, // 默认为false, 表示不覆盖已有的command配置。若使用默认设置，当对已有command配置进行addCommand时会报错
 }
 ```
 
@@ -80,3 +80,7 @@ customArgs.excute(config);
 ```
 执行回调时会将参数传入函数。如将['chrome', 'firefox']传入回调。
 
+
+# 升级说明
+## v1.0.1
+修改了更为详细的注释。Args.addOptions添加了对字符串options的支持。

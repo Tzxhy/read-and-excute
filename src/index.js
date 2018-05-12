@@ -51,6 +51,9 @@ Args.prototype.addCommand = function(instruct, description, callback) {
 }
 
 Args.prototype.addOptions = function(instruct, options) {
+    if (!Array.isArray(options)) {
+        options = [options];
+    }
     var index = this.commands.indexOf(instruct);
     if (index === -1) {
         throw new Error('No command found named ' + instruct + ' when using addOptions.');
