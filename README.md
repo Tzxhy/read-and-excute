@@ -73,10 +73,9 @@ config = {
 ```javascript
 /**
  * 执行命令
- * @param {object} config 执行时的配置
  * @return {customArgs}     返回调用该方法的对象
  */
-customArgs.excute(config);
+customArgs.excute();
 ```
 执行回调时会将参数传入函数。如将['chrome', 'firefox']传入回调。
 
@@ -85,4 +84,4 @@ customArgs.excute(config);
 ## v1.0.1
 修改了更为详细的注释。Args.addOptions添加了对字符串options的支持。
 ## v1.0.2
-添加使用-help指令显示帮助文档
+添加使用-help指令显示帮助文档。

@@ -109,7 +109,7 @@ Args.prototype.addConfig = function(config) {
     return this;
 }
 
-Args.prototype.excute = function(config) {
+Args.prototype.excute = function() {
     var parsedParam = this.parse();
     var tempFuns = this.callbacks;
     var tempCommands = this.commands;
