@@ -15,6 +15,6 @@ argsTest.addCommand('test', 'show test description', function(param){
     console.log('test in callback!');
 });
 argsTest.addOptions('test', ['chrome', 'firefox']);
-argsTest.showHelp();
+
 
 argsTest.excute();

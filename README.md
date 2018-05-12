@@ -84,3 +84,5 @@ customArgs.excute(config);
 # 升级说明
 ## v1.0.1
 修改了更为详细的注释。Args.addOptions添加了对字符串options的支持。
+## v1.0.2
+添加使用-help指令显示帮助文档

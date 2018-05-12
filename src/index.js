@@ -1,4 +1,3 @@
-var colorConfig = require('./config/color.config.js');
 var globalConfig = require('./config/global.config.js');
 
 
@@ -13,6 +12,16 @@ function Args(config) {
     this.options = config.options || [];
     this.callbacks = config.realFunction || [];
     this.globalConfig = config.globalConfig || globalConfig;
+    var _self = this;
+    this.addConfig({
+        command: 'help',
+        description: 'Use -help can refer to help doc',
+        callback: function(){
+            _self.showHelp();
+        },
+        options: []
+    });
+    
 }
 
 
